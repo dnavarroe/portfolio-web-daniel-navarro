@@ -5,6 +5,15 @@ interface SkillCardProps {
   skill: Skill;
 }
 
+const resolveImagePath = (path: string): string => {
+  if (path.startsWith('/')) {
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+    return `${cleanBase}${path}`;
+  }
+  return path;
+};
+
 export function SkillCard({ skill }: SkillCardProps) {
   const { i18n, t } = useTranslation();
   const currentLang = i18n.language as 'es' | 'en';
@@ -47,7 +56,7 @@ export function SkillCard({ skill }: SkillCardProps) {
           <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-primary-50 rounded-lg">
             {skill.icon.startsWith('/') || skill.icon.startsWith('http') ? (
               <img
-                src={skill.icon}
+                src={resolveImagePath(skill.icon)}
                 alt={skill.name[currentLang]}
                 className="w-8 h-8 object-contain"
               />
