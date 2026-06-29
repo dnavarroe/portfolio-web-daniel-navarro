@@ -7,6 +7,15 @@ import SEO from '../components/SEO';
 import { generatePersonStructuredData } from '../utils/structuredData';
 import type { PersonalInfo, Project, Skill } from '../types';
 
+const resolveImagePath = (path: string): string => {
+  if (path.startsWith('/')) {
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+    return `${cleanBase}${path}`;
+  }
+  return path;
+};
+
 function HomePage() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
@@ -249,7 +258,7 @@ function HomePage() {
                 {skill.icon && (
                   <div className="text-4xl mb-2 flex justify-center">
                     {skill.icon.startsWith('/') || skill.icon.startsWith('http') ? (
-                      <img src={skill.icon} alt={skill.name[currentLang]} className="w-10 h-10 object-contain" />
+                      <img src={resolveImagePath(skill.icon)} alt={skill.name[currentLang]} className="w-10 h-10 object-contain" />
                     ) : (
                       skill.icon
                     )}
