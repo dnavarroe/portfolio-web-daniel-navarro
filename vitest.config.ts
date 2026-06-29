@@ -12,6 +12,9 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
+        '.venv/',
+        'proyectos_notebooks/',
+        'scripts/',
         'src/test/',
         '**/*.d.ts',
         '**/*.config.*',
