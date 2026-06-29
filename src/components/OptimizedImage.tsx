@@ -8,6 +8,15 @@ interface OptimizedImageProps {
   loading?: 'lazy' | 'eager';
 }
 
+const resolveImagePath = (path: string): string => {
+  if (path.startsWith('/')) {
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+    return `${cleanBase}${path}`;
+  }
+  return path;
+};
+
 export function OptimizedImage({ 
   src, 
   alt, 
@@ -15,8 +24,10 @@ export function OptimizedImage({
   className,
   loading = 'lazy'
 }: OptimizedImageProps) {
-  const placeholderSrc = '/content/images/placeholder.jpg';
-  const [imgSrc, setImgSrc] = useState(src);
+  const resolvedSrc = resolveImagePath(src);
+  const resolvedPlaceholder = resolveImagePath('/content/images/placeholder.jpg');
+  
+  const [imgSrc, setImgSrc] = useState(resolvedSrc);
   const [hasError, setHasError] = useState(false);
   
   const getWebpSrc = (originalSrc: string): string => {
@@ -25,14 +36,14 @@ export function OptimizedImage({
   };
 
   const handleError = () => {
-    if (imgSrc === placeholderSrc) return;
-    setImgSrc(placeholderSrc);
+    if (imgSrc === resolvedPlaceholder) return;
+    setImgSrc(resolvedPlaceholder);
     setHasError(true);
   };
   
   return (
     <picture>
-      {!hasError && <source srcSet={getWebpSrc(src)} type="image/webp" />}
+      {!hasError && <source srcSet={getWebpSrc(resolvedSrc)} type="image/webp" />}
       <img 
         src={imgSrc}
         alt={alt}
