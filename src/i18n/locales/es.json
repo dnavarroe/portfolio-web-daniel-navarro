@@ -1,0 +1,67 @@
+{
+  "app": {
+    "title": "Portfolio - Daniel Navarro"
+  },
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "contact": "Contacto",
+    "featuredProjects": "Proyectos Destacados",
+    "mainSkills": "Habilidades Principales"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "viewDetails": "Ver Detalles",
+    "viewAll": "Ver todos los proyectos",
+    "backToList": "Volver a Proyectos",
+    "technologies": "Tecnologías",
+    "links": "Enlaces",
+    "sourceCode": "Código Fuente",
+    "liveDemo": "Demo en Vivo",
+    "notFound": "Proyecto no encontrado",
+    "notFoundDescription": "El proyecto que buscas no existe o ha sido eliminado."
+  },
+  "skills": {
+    "title": "Habilidades y Experiencia",
+    "subtitle": "Soy un Científico de Datos con experiencia en análisis de datos, visión computacional y automatización de procesos. He trabajado en sectores como transporte público y minería, desarrollando soluciones que combinan Python, SQL y herramientas de visualización para transformar datos en decisiones concretas.",
+    "viewAll": "Ver todas las habilidades",
+    "technical": "Habilidades Técnicas",
+    "education": "Formación Académica",
+    "certifications": "Certificaciones",
+    "experience": "Experiencia Laboral",
+    "level": {
+      "basic": "Básico",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado",
+      "expert": "Experto"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error"
+  },
+  "meta": {
+    "description": "Portafolio personal de Daniel Navarro - Científico de Datos"
+  },
+  "errors": {
+    "projectsLoadFailed": "Error al cargar proyectos",
+    "loadFailed": "Error al cargar el contenido"
+  },
+  "accessibility": {
+    "skipToMain": "Saltar al contenido principal",
+    "languageSelector": "Selector de idioma",
+    "languageChanged": "Idioma cambiado a {{language}}",
+    "homeLink": "Ir a la página de inicio",
+    "mainNavigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil",
+    "toggleMenu": "Alternar menú de navegación",
+    "openMenu": "Abrir menú principal",
+    "closeMenu": "Cerrar menú principal",
+    "switchToSpanish": "Cambiar a Español",
+    "switchToEnglish": "Cambiar a Inglés"
+  }
+}

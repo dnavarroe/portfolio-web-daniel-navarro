@@ -1,0 +1,14 @@
+{
+  "files": [
+    "exploratory-data-analysis-banking.json",
+    "data-visualization-techniques.json",
+    "customer-segmentation-kmeans.json",
+    "security-incident-cost-prediction.json",
+    "spam-detection-logistic-regression.json",
+    "recommendation-systems-surprise.json",
+    "malicious-url-detection-svm.json",
+    "weather-time-series-rnn.json",
+    "android-malware-detection-decision-trees.json",
+    "isolation-forest-fraud-detection.json"
+  ]
+}

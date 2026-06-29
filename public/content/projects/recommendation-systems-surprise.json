@@ -1,0 +1,32 @@
+{
+  "id": "recommendation-systems-surprise",
+  "title": {
+    "es": "Sistemas de Recomendación y Filtro Colaborativo",
+    "en": "Recommendation Systems and Collaborative Filtering"
+  },
+  "shortDescription": {
+    "es": "Implementación de motores de recomendación basados en filtrado colaborativo y similitud coseno utilizando la biblioteca Surprise con MovieLens.",
+    "en": "Implementation of recommendation engines based on collaborative filtering and cosine similarity using the Surprise library with MovieLens."
+  },
+  "fullDescription": {
+    "es": "Este proyecto profundiza en la construcción de sistemas de recomendación para la predicción de preferencias de usuarios. Primero, introduce el cálculo teórico y práctico de la similitud coseno de forma manual y mediante NumPy y Scikit-learn. Luego, aborda la problemática del mundo real sobre datos faltantes en matrices usuario-ítem (esparsidad). Para solucionar esto, implementa algoritmos de filtrado colaborativo avanzados empleando la biblioteca especializada Surprise (API compatible con Scikit-learn) sobre el popular conjunto de datos MovieLens de 100k calificaciones, optimizando las predicciones de valoración de películas de forma personalizada.",
+    "en": "This project delves into building recommendation systems to predict user preferences. First, it introduces the theoretical and practical calculation of cosine similarity manually and through NumPy and Scikit-learn. Then, it addresses the real-world challenge of missing data in user-item matrices (sparsity). To solve this, it implements advanced collaborative filtering algorithms using the specialized Surprise library (API compatible with Scikit-learn) on the popular MovieLens 100k ratings dataset, optimizing personalized movie rating predictions."
+  },
+  "image": "/content/images/projects/recommendation-systems-surprise.jpg",
+  "images": [
+    "/content/images/projects/recommendation-systems-surprise.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Surprise",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "NLTK"
+  ],
+  "date": "2024-03-25",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/sistemas_recomendacion.ipynb"
+  }
+}

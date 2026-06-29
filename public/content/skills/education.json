@@ -1,0 +1,28 @@
+{
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": {
+        "es": "Universidad Nacional de Colombia",
+        "en": "Universidad Nacional de Colombia"
+      },
+      "degree": {
+        "es": "Maestría en Ingineria Analitica",
+        "en": "Master's Degree in Analytical Engineering"
+      },
+      "year": "2026 - in progress"
+    },
+    {
+      "id": "edu-2",
+      "institution": {
+        "es": "Universidad Nacional de Colombia",
+        "en": "Universidad Nacional de Colombia"
+      },
+      "degree": {
+        "es": "Matemáticas",
+        "en": "Mathematics"
+      },
+      "year": "2025"
+    }
+  ]
+}

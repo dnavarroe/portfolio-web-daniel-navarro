@@ -1,0 +1,31 @@
+{
+  "id": "malicious-url-detection-svm",
+  "title": {
+    "es": "Detección de URLs Maliciosas con SVM",
+    "en": "Malicious URL Detection using SVM"
+  },
+  "shortDescription": {
+    "es": "Modelo Support Vector Machine para clasificar URLs en benignas, spam, phishing, malware o defacement, procesando datos de UNB.",
+    "en": "Support Vector Machine model to classify URLs into benign, spam, phishing, malware, or defacement, processing UNB data."
+  },
+  "fullDescription": {
+    "es": "Este proyecto aborda la ciberseguridad web mediante la detección automática de URLs fraudulentas y maliciosas. Utilizando el prestigioso dataset de la Universidad de Nuevo Brunswick (UNB), que clasifica URLs en cinco categorías (Benignas, Spam, Phishing, Malware y Defacement), se construye un clasificador avanzado utilizando Support Vector Machines (SVM). El flujo de trabajo abarca el particionado estratificado en entrenamiento, validación y prueba para mitigar el desbalance, escalado robusto de datos con `RobustScaler` e implementaciones mediante Pipelines de Scikit-learn. Incluye funciones para graficar el límite de decisión del hiperplano y los vectores de soporte.",
+    "en": "This project addresses web cybersecurity through the automatic detection of fraudulent and malicious URLs. Using the prestigious dataset from the University of New Brunswick (UNB), which classifies URLs into five categories (Benign, Spam, Phishing, Malware, and Defacement), an advanced classifier is built using Support Vector Machines (SVM). The workflow encompasses stratified partitioning into training, validation, and testing to mitigate imbalance, robust scaling of data with `RobustScaler`, and implementations through Scikit-learn Pipelines. It includes functions to plot the decision boundary of the hyperplane and support vectors."
+  },
+  "image": "/content/images/projects/malicious-url-detection-svm.jpg",
+  "images": [
+    "/content/images/projects/malicious-url-detection-svm.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib"
+  ],
+  "date": "2024-04-10",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Support%20Vector%20Machine%20-%20Detecci%C3%B3n%20de%20URLs%20maliciosas.ipynb"
+  }
+}

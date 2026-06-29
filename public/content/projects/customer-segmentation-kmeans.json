@@ -1,0 +1,32 @@
+{
+  "id": "customer-segmentation-kmeans",
+  "title": {
+    "es": "Segmentación de Clientes con K-Means",
+    "en": "Customer Segmentation using K-Means"
+  },
+  "shortDescription": {
+    "es": "Segmentación no supervisada de clientes basada en ingresos anuales y puntuación de gastos para optimizar estrategias de marketing en centros comerciales.",
+    "en": "Unsupervised customer segmentation based on annual income and spending score to optimize mall marketing strategies."
+  },
+  "fullDescription": {
+    "es": "Este proyecto implementa un modelo de Machine Learning no supervisado para segmentar clientes de un centro comercial a partir de sus ingresos anuales y su puntuación de gastos (Spending Score). El algoritmo principal utilizado es K-Means Clustering. El proyecto abarca desde el análisis exploratorio y la comprobación de valores nulos hasta la selección óptima del número de clústeres mediante el método del codo (analizando la suma de cuadrados dentro de los grupos - WCSS). Finalmente, se entrena el modelo para agrupar a los clientes en 5 segmentos bien diferenciados, facilitando el diseño de campañas de marketing dirigidas y personalizadas para cada perfil.",
+    "en": "This project implements an unsupervised Machine Learning model to segment mall customers based on their annual income and spending score. The primary algorithm used is K-Means Clustering. The project covers exploratory analysis, checking for null values, and selecting the optimal number of clusters using the Elbow Method (analyzing the Within-Cluster Sum of Squares - WCSS). Finally, the model is trained to group customers into 5 distinct segments, facilitating the design of targeted and personalized marketing campaigns for each profile."
+  },
+  "image": "/content/images/projects/customer-segmentation-kmeans.jpg",
+  "images": [
+    "/content/images/projects/customer-segmentation-kmeans.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn"
+  ],
+  "date": "2024-02-05",
+  "featured": true,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Project_Customer_Segmentation_using_K_Means_Clustering.ipynb"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "certifications": [
+    {
+      "id": "cert-1",
+      "name": {
+        "es": "Machine learning y data science: curso con Python",
+        "en": "Machine learning y data science: course with Python"
+      },
+      "issuer": {
+        "es": "Udemy",
+        "en": "Udemy"
+      },
+      "year": "2024"
+    },
+    {
+      "id": "cert-2",
+      "name": {
+        "es": "Analisis de datos y visualizacion",
+        "en": "Data analysis and visualization"
+      },
+      "issuer": {
+        "es": "Udemy",
+        "en": "Udemy"
+      },
+      "year": "2024"
+    }
+  ]
+}

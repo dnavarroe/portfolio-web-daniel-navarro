@@ -1,0 +1,30 @@
+{
+  "id": "exploratory-data-analysis-banking",
+  "title": {
+    "es": "Análisis Exploratorio de Datos de Marketing Bancario",
+    "en": "Exploratory Data Analysis of Banking Marketing Data"
+  },
+  "shortDescription": {
+    "es": "Análisis exploratorio y limpieza de un dataset de marketing bancario de más de 45,000 registros para identificar perfiles con alto potencial de conversión.",
+    "en": "Exploratory analysis and cleaning of a banking marketing dataset with over 45,000 records to identify profiles with high conversion potential."
+  },
+  "fullDescription": {
+    "es": "Este proyecto se centra en realizar un Análisis Exploratorio de Datos (EDA) completo y riguroso sobre un conjunto de datos de campañas de marketing directo de una entidad bancaria (45,189 filas y 17 columnas). El objetivo principal es identificar qué perfil de cliente posee el mayor potencial para adquirir un certificado de depósito a plazo fijo. La metodología incluye el análisis univariado, bivariado y multivariado de características demográficas y financieras (edad, saldo promedio, tipo de trabajo, estado civil, historial de impagos y préstamos). A través de visualizaciones detalladas, se revelan correlaciones críticas y se aborda el desbalanceo de clases en la variable objetivo, preparando el terreno para futuros pipelines de aprendizaje automático.",
+    "en": "This project focuses on performing a comprehensive and rigorous Exploratory Data Analysis (EDA) on a direct marketing campaign dataset from a banking institution (45,189 rows and 17 columns). The main objective is to identify the customer profile with the highest potential to purchase a term deposit certificate. The methodology includes univariate, bivariate, and multivariate analysis of demographic and financial features (age, average balance, job type, marital status, default history, and loans). Through detailed visualizations, critical correlations are revealed, and class imbalance in the target variable is addressed, paving the way for future machine learning pipelines."
+  },
+  "image": "/content/images/projects/exploratory-data-analysis-banking.jpg",
+  "images": [
+    "/content/images/projects/exploratory-data-analysis-banking.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn"
+  ],
+  "date": "2024-01-10",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Analisis_exploratorio_de_datos.ipynb"
+  }
+}

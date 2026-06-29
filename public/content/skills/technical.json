@@ -1,0 +1,191 @@
+{
+  "categories": [
+    {
+      "id": "data-science",
+      "name": {
+        "es": "Ciencia de Datos",
+        "en": "Data Science"
+      },
+      "skills": [
+        {
+          "id": "python",
+          "name": {
+            "es": "Python",
+            "en": "Python"
+          },
+          "category": "data-science",
+          "level": "advanced",
+          "icon": "/content/images/skills/python.svg"
+        },
+        {
+          "id": "machine-learning",
+          "name": {
+            "es": "Machine Learning",
+            "en": "Machine Learning"
+          },
+          "category": "data-science",
+          "level": "intermediate",
+          "icon": "/content/images/skills/machine-learning.svg"
+        },
+        {
+          "id": "deep-learning",
+          "name": {
+            "es": "Deep Learning",
+            "en": "Deep Learning"
+          },
+          "category": "data-science",
+          "level": "intermediate",
+          "icon": "/content/images/skills/deep-learning.svg"
+        },
+        {
+          "id": "statistics",
+          "name": {
+            "es": "Estadística",
+            "en": "Statistics"
+          },
+          "category": "data-science",
+          "level": "advanced",
+          "icon": "/content/images/skills/statistics.svg"
+        },
+        {
+          "id": "sql",
+          "name": {
+            "es": "SQL",
+            "en": "SQL"
+          },
+          "category": "programming",
+          "level": "advanced",
+          "icon": "/content/images/skills/sql.svg"
+        },
+        {
+          "id": "r",
+          "name": {
+            "es": "R",
+            "en": "R"
+          },
+          "category": "programming",
+          "level": "advanced",
+          "icon": "/content/images/skills/R.svg"
+        },
+        {
+          "id": "airflow",
+          "name": {
+            "es": "Apache Airflow",
+            "en": "Apache Airflow"
+          },
+          "category": "programming",
+          "level": "intermediate",
+          "icon": "/content/images/skills/airflow.svg"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": {
+        "es": "Herramientas y Frameworks",
+        "en": "Tools and Frameworks"
+      },
+      "skills": [
+        {
+          "id": "tensorflow",
+          "name": {
+            "es": "TensorFlow",
+            "en": "TensorFlow"
+          },
+          "category": "tools",
+          "level": "intermediate",
+          "icon": "/content/images/skills/tensorflow.svg"
+        },
+        {
+          "id": "pytorch",
+          "name": {
+            "es": "PyTorch",
+            "en": "PyTorch"
+          },
+          "category": "tools",
+          "level": "intermediate",
+          "icon": "/content/images/skills/pytorch.svg"
+        },
+        {
+          "id": "scikit-learn",
+          "name": {
+            "es": "Scikit-learn",
+            "en": "Scikit-learn"
+          },
+          "category": "tools",
+          "level": "intermediate",
+          "icon": "/content/images/skills/scikitlearn.svg"
+        },
+        {
+          "id": "pandas",
+          "name": {
+            "es": "Pandas",
+            "en": "Pandas"
+          },
+          "category": "tools",
+          "level": "advanced",
+          "icon": "/content/images/skills/pandas.svg"
+        },
+        {
+          "id": "data-visualization",
+          "name": {
+            "es": "Visualización de Datos",
+            "en": "Data Visualization"
+          },
+          "category": "tools",
+          "level": "advanced",
+          "icon": "/content/images/skills/power-bi.svg"
+        }
+      ]
+    },
+    {
+      "id": "cloud-databases",
+      "name": {
+        "es": "Cloud y Bases de Datos",
+        "en": "Cloud and Databases"
+      },
+      "skills": [
+        {
+          "id": "aws",
+          "name": {
+            "es": "AWS",
+            "en": "AWS"
+          },
+          "category": "cloud-databases",
+          "level": "intermediate",
+          "icon": "/content/images/skills/aws.svg"
+        },
+        {
+          "id": "docker",
+          "name": {
+            "es": "Docker",
+            "en": "Docker"
+          },
+          "category": "cloud-databases",
+          "level": "intermediate",
+          "icon": "/content/images/skills/docker.svg"
+        },
+        {
+          "id": "mongodb",
+          "name": {
+            "es": "MongoDB",
+            "en": "MongoDB"
+          },
+          "category": "cloud-databases",
+          "level": "intermediate",
+          "icon": "/content/images/skills/mongodb.svg"
+        },
+        {
+          "id": "postgresql",
+          "name": {
+            "es": "PostgreSQL",
+            "en": "PostgreSQL"
+          },
+          "category": "cloud-databases",
+          "level": "intermediate",
+          "icon": "/content/images/skills/postgresql.svg"
+        }
+      ]
+    }
+  ]
+}

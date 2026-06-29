@@ -1,0 +1,31 @@
+{
+  "id": "security-incident-cost-prediction",
+  "title": {
+    "es": "Predicción del Costo de Incidentes de Ciberseguridad",
+    "en": "Cybersecurity Incident Cost Prediction"
+  },
+  "shortDescription": {
+    "es": "Modelo de regresión lineal para estimar el impacto financiero de incidentes de seguridad según el número de computadoras afectadas.",
+    "en": "Linear regression model to estimate the financial impact of security incidents based on the number of affected computers."
+  },
+  "fullDescription": {
+    "es": "Un caso de uso práctico orientado a la ciberseguridad que implementa un modelo de regresión lineal simple en Python. El objetivo consiste en modelar y predecir el costo financiero estimado de un incidente de seguridad (como ataques de ransomware o malware) basándose en la cantidad de equipos o servidores infectados en la red. El proyecto incluye la generación de un conjunto de datos controlado, la visualización gráfica de la dispersión de datos, escalado de variables cuantitativas para representar valores reales de equipos e impacto en dólares, y el entrenamiento del modelo de regresión utilizando Scikit-learn para estimar con precisión el impacto financiero de futuras brechas de seguridad.",
+    "en": "A practical cybersecurity-oriented use case that implements a simple linear regression model in Python. The goal is to model and predict the estimated financial cost of a security incident (such as ransomware or malware attacks) based on the number of infected computers or servers in the network. The project includes generating a controlled dataset, visualizing data dispersion, scaling quantitative variables to represent real values of affected systems and dollar impact, and training the regression model using Scikit-learn to accurately estimate the financial impact of future security breaches."
+  },
+  "image": "/content/images/projects/security-incident-cost-prediction.jpg",
+  "images": [
+    "/content/images/projects/security-incident-cost-prediction.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib"
+  ],
+  "date": "2024-02-15",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Regresi%C3%B3n%20Lineal%20-%20Predici%C3%B3n%20del%20coste%20de%20un%20incidente%20de%20seguridad.ipynb"
+  }
+}

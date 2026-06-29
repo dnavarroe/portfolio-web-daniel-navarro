@@ -1,0 +1,33 @@
+{
+  "id": "weather-time-series-rnn",
+  "title": {
+    "es": "Predicción Meteorológica con Series Temporales y RNN",
+    "en": "Weather Prediction with Time Series and RNNs"
+  },
+  "shortDescription": {
+    "es": "Modelo de Deep Learning en TensorFlow que predice el clima de Dinamarca 24 horas al futuro mediante redes recurrentes GRU y LSTM.",
+    "en": "Deep Learning model in TensorFlow that predicts Denmark's weather 24 hours into the future using GRU and LSTM recurrent networks."
+  },
+  "fullDescription": {
+    "es": "Este proyecto implementa una red neuronal recurrente (RNN) avanzada basada en celdas GRU (Gated Recurrent Unit) en TensorFlow para la predicción meteorológica. Utiliza datos históricos de clima de 5 ciudades de Dinamarca (1980-2018), procesando secuencias de 1,344 puntos temporales (8 semanas) de 20 variables de entrada para predecir la temperatura, presión y velocidad del viento en la ciudad de Odense con 24 horas de antelación. Se implementa escalado de datos con MinMaxScaler, generadores de lotes secuenciales para series temporales y optimizaciones con callbacks avanzados como Early Stopping, ReduceLROnPlateau y ModelCheckpoint.",
+    "en": "This project implements an advanced Recurrent Neural Network (RNN) based on GRU (Gated Recurrent Unit) cells in TensorFlow for weather forecasting. It utilizes historical weather data from 5 Danish cities (1980-2018), processing sequences of 1,344 time points (8 weeks) across 20 input variables to predict temperature, pressure, and wind speed in the city of Odense 24 hours in advance. Data scaling is done via MinMaxScaler, sequential batch generators for time series are implemented, and optimization is done using advanced callbacks like Early Stopping, ReduceLROnPlateau, and ModelCheckpoint."
+  },
+  "image": "/content/images/projects/weather-time-series-rnn.jpg",
+  "images": [
+    "/content/images/projects/weather-time-series-rnn.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "TensorFlow",
+    "Keras",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib"
+  ],
+  "date": "2024-05-02",
+  "featured": true,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Time_Series_Prediction.ipynb"
+  }
+}

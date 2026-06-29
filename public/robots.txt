@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danielnavarro.github.io/portfolio-web-daniel-navarro/sitemap.xml

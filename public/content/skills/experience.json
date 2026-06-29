@@ -1,0 +1,52 @@
+{
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": {
+        "es": "Quipux",
+        "en": "Quipux"
+      },
+      "position": {
+        "es": "Analista de Datos",
+        "en": "Data Analyst"
+      },
+      "period": "07/2024-Presente",
+      "description": {
+        "es": "Desarrollo y mantenimiento de procesos ETL para la extracción, transformación y consolidación de datos. Diseño, construcción y mantenimiento de tableros de control en Power BI para el seguimiento de indicadores operativos y de gestión. Desarrollo de APIs y automatización de procesos utilizando Python para optimizar la generación de reportes y el procesamiento de información. Análisis, validación y control de calidad de datos para garantizar la confiabilidad de los indicadores de negocio. Optimización de consultas SQL y procesamiento de grandes volúmenes de datos en Oracle y pandas. Implementación de nuevas métricas e indicadores de desempeño de acuerdo con las necesidades del negocio. Automatización de tareas repetitivas, reduciendo tiempos de procesamiento y minimizando errores manuales. Colaboración con equipos técnicos y funcionales para el levantamiento de requerimientos y la entrega de soluciones basadas en datos.",
+        "en": "Development and maintenance of ETL processes for data extraction, transformation, and consolidation. Design, construction, and maintenance of Power BI dashboards to monitor operational and management indicators. API development and process automation using Python to optimize report generation and data processing. Data analysis, validation, and quality control to ensure the reliability of business indicators. Optimization of SQL queries and processing of large data volumes using Oracle and pandas. Implementation of new metrics and performance indicators according to business needs. Automation of repetitive tasks, reducing processing times and minimizing manual errors. Collaboration with technical and functional teams for requirements gathering and delivery of data-driven solutions."
+      }
+    },
+    {
+      "id": "exp-2",
+      "company": {
+        "es": "Mineros S.A.",
+        "en": "Mineros S.A."
+      },
+      "position": {
+        "es": "Cientifico de Datos",
+        "en": "Data Scientist"
+      },
+      "period": "03/2024-06/2024",
+      "description": {
+        "es": "Desarrollo de software de visión computacional (AuVision) para segmentar, contar y estimar el área superficial de partículas de oro en muestras de microscopio. Implementación de modelos de regresión para estimar el peso individual de partículas a partir del área superficial, mejorando la trazabilidad y control de calidad. Automatización del flujo de procesamiento de imágenes, reduciendo el tiempo de análisis por muestra de 30 minutos a menos de 5. Integración de interfaz gráfica con PyQt/PySide6 para uso por personal no técnico.",
+        "en": "Developed computer vision software (AuVision) to segment, count, and estimate the surface area of gold particles in microscope samples. Implemented regression models to estimate individual particle weight based on surface area, improving traceability and quality control. Automated image processing workflow, reducing analysis time per sample from 30 minutes to under 5 minutes. Integrated a user-friendly graphical interface using PyQt/PySide6, enabling use by non-technical field personnel."
+      }
+    },
+    {
+      "id": "exp-3",
+      "company": {
+        "es": "Mineros S.A.",
+        "en": "Mineros S.A."
+      },
+      "position": {
+        "es": "QA/QC Practicante",
+        "en": "QA/QC Intern"
+      },
+      "period": "09/2023-03/2024",
+      "description": {
+        "es": "Prácticas en el departamento de QA/QC de Mineros Colombia, contribuyendo a la mejora de procesos de aseguramiento de calidad. Diseño e implementación de una base de datos estructurada para almacenar mediciones de variables operacionales clave de equipos de recuperación de oro. Automatización de reportes de desempeño diarios con Python, reduciendo el tiempo de reporte manual en más del 80%. Colaboración con equipos de operaciones y mantenimiento para definir KPIs relevantes y asegurar la captura correcta de datos en campo.",
+        "en": "Completed internship at Mineros Colombia in the QA/QC department, contributing to the enhancement of quality assurance processes. Designed and implemented a structured database to store measurements of key operational variables from gold recovery equipment. Automated daily performance report generation using Python, reducing manual reporting time by over 80%. Collaborated with operations and maintenance teams to define relevant KPIs and ensure proper data capture in field conditions."
+      }
+    }
+  ]
+}

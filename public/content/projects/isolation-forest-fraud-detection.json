@@ -1,0 +1,32 @@
+{
+  "id": "isolation-forest-fraud-detection",
+  "title": {
+    "es": "Detección de Fraude Bancario con Isolation Forest",
+    "en": "Credit Card Fraud Detection with Isolation Forest"
+  },
+  "shortDescription": {
+    "es": "Modelo de detección de anomalías para identificar transacciones fraudulentas con tarjetas de crédito en un conjunto de datos altamente desbalanceado de más de 280,000 registros.",
+    "en": "Anomaly detection model to identify fraudulent credit card transactions in a highly unbalanced dataset of over 280,000 records."
+  },
+  "fullDescription": {
+    "es": "Este proyecto desarrolla un sistema inteligente de detección de fraudes bancarios basado en el algoritmo de aprendizaje no supervisado Isolation Forest. Se utiliza el dataset europeo de transacciones de tarjetas de crédito (septiembre de 2013), caracterizado por un extremo desbalanceo de clases (solo 0.172% de fraudes en 284,807 registros). Tras analizar las características transformadas mediante PCA (V1-V28), el tiempo y el monto de la transacción, se entrena el modelo de bosque de aislamiento para aislar las anomalías. Se evalúa el desempeño del modelo optimizando la métrica F1-score y la matriz de confusión, logrando una tasa de detección de fraude excepcional sin requerir datos etiquetados para el entrenamiento del clasificador.",
+    "en": "This project develops an intelligent bank fraud detection system based on the unsupervised learning algorithm Isolation Forest. The European credit card transactions dataset (September 2013) is used, characterized by an extreme class imbalance (only 0.172% fraud cases in 284,807 records). After analyzing the PCA-transformed features (V1-V28), time, and transaction amount, the isolation forest model is trained to isolate anomalies. The model performance is evaluated by optimizing the F1-score and confusion matrix, achieving an exceptional fraud detection rate without requiring labeled data for classifier training."
+  },
+  "image": "/content/images/projects/isolation-forest-fraud-detection.jpg",
+  "images": [
+    "/content/images/projects/isolation-forest-fraud-detection.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn"
+  ],
+  "date": "2024-04-20",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Isolation_Forest_Detecci%C3%B3n_de_transacciones_bancarias_fraudulentas.ipynb"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Daniel Navarro",
+  "photo": "/content/images/profile.png",
+  "summary": {
+    "es": "Científico de datos apasionado por transformar datos en insights accionables. Especializado en análisis estadístico, machine learning y visualización de datos. Con experiencia en proyectos de análisis predictivo, procesamiento de lenguaje natural y optimización de procesos mediante inteligencia artificial.",
+    "en": "Data scientist passionate about transforming data into actionable insights. Specialized in statistical analysis, machine learning, and data visualization. Experienced in predictive analytics projects, natural language processing, and process optimization through artificial intelligence."
+  },
+  "contacts": {
+    "email": "daniel.navarro@example.com",
+    "linkedin": "https://www.linkedin.com/in/daniel-esteban-navarro-espinosa-520840270/",
+    "github": "https://github.com/dnavarroe"
+  },
+  "featuredSkills": ["python", "machine-learning", "data-visualization", "sql", "statistics", "deep-learning"]
+}

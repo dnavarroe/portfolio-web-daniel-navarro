@@ -1,0 +1,32 @@
+{
+  "id": "spam-detection-logistic-regression",
+  "title": {
+    "es": "Detección de Spam con Regresión Logística y NLP",
+    "en": "Spam Detection with Logistic Regression and NLP"
+  },
+  "shortDescription": {
+    "es": "Clasificador automático de correos electrónicos spam utilizando procesamiento de lenguaje natural y regresión logística con el dataset TREC.",
+    "en": "Automatic email spam classifier using natural language processing and logistic regression with the TREC dataset."
+  },
+  "fullDescription": {
+    "es": "Este proyecto aborda uno de los problemas históricos del aprendizaje automático: la clasificación de correos no deseados (SPAM) a partir del dataset público 2007 TREC Public Spam Corpus (que contiene más de 75,000 correos electrónicos reales). Se desarrolla una clase robusta para el procesamiento de lenguaje natural (NLP) que limpia código HTML residual de los correos, elimina signos de puntuación y palabras vacías (stopwords), y realiza stemming (reducción de palabras a su raíz común) mediante NLTK. Posteriormente, se implementa y entrena un modelo de regresión logística para clasificar los correos filtrando el ruido irrelevante de las cabeceras de red.",
+    "en": "This project addresses one of the classic problems in machine learning: classifying unsolicited emails (SPAM) using the public 2007 TREC Public Spam Corpus (containing over 75,000 real emails). A robust Natural Language Processing (NLP) class is developed to clean residual HTML from emails, remove punctuation and stopwords, and perform stemming (word root reduction) using NLTK. Subsequently, a logistic regression model is implemented and trained to classify emails while filtering out irrelevant network header noise."
+  },
+  "image": "/content/images/projects/spam-detection-logistic-regression.jpg",
+  "images": [
+    "/content/images/projects/spam-detection-logistic-regression.jpg"
+  ],
+  "technologies": [
+    "Python",
+    "Scikit-learn",
+    "NLTK",
+    "Pandas",
+    "NumPy",
+    "Email"
+  ],
+  "date": "2024-03-01",
+  "featured": false,
+  "links": {
+    "github": "https://github.com/dnavarroe/PortafolioDA/blob/main/Regresi%C3%B3n%20Log%C3%ADstica%20-%20Detecci%C3%B3n%20de%20SPAM.ipynb"
+  }
+}

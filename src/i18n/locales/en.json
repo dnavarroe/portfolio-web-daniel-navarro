@@ -1,0 +1,67 @@
+{
+  "app": {
+    "title": "Portfolio - Daniel Navarro"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "contact": "Contact",
+    "featuredProjects": "Featured Projects",
+    "mainSkills": "Main Skills"
+  },
+  "projects": {
+    "title": "My Projects",
+    "viewDetails": "View Details",
+    "viewAll": "View all projects",
+    "backToList": "Back to Projects",
+    "technologies": "Technologies",
+    "links": "Links",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "notFound": "Project not found",
+    "notFoundDescription": "The project you're looking for doesn't exist or has been removed."
+  },
+  "skills": {
+    "title": "Skills and Experience",
+    "subtitle": "I'm a Data Scientist with experience in data analysis, computer vision, and process automation. I've worked across industries including public transportation and mining, building solutions that combine Python, SQL, and visualization tools to turn data into actionable decisions.",
+    "viewAll": "View all skills",
+    "technical": "Technical Skills",
+    "education": "Education",
+    "certifications": "Certifications",
+    "experience": "Work Experience",
+    "level": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "expert": "Expert"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error"
+  },
+  "meta": {
+    "description": "Daniel Navarro's personal portfolio - Data Scientist"
+  },
+  "errors": {
+    "projectsLoadFailed": "Failed to load projects",
+    "loadFailed": "Failed to load content"
+  },
+  "accessibility": {
+    "skipToMain": "Skip to main content",
+    "languageSelector": "Language selector",
+    "languageChanged": "Language changed to {{language}}",
+    "homeLink": "Go to home page",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "toggleMenu": "Toggle navigation menu",
+    "openMenu": "Open main menu",
+    "closeMenu": "Close main menu",
+    "switchToSpanish": "Switch to Spanish",
+    "switchToEnglish": "Switch to English"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "// INSTRUCCIONES": "Esta es una plantilla para agregar nuevos proyectos al portafolio",
+  "// PASOS": [
+    "1. Copia este archivo a public/content/projects/ con un nombre descriptivo (ej: mi-proyecto.json)",
+    "2. Completa todos los campos REQUIRED (requeridos)",
+    "3. Completa los campos OPTIONAL (opcionales) según corresponda",
+    "4. Agrega el nombre del archivo a public/content/projects/manifest.json",
+    "5. Ejecuta 'npm run validate:content' para verificar que todo esté correcto",
+    "6. Las imágenes deben estar en public/content/images/projects/"
+  ],
+  
+  "// ============================================": "",
+  "// CAMPOS REQUERIDOS (REQUIRED)": "",
+  "// ============================================": "",
+  
+  "id": "REQUIRED - Identificador único del proyecto en formato kebab-case (ej: customer-churn-prediction)",
+  
+  "title": {
+    "// DESCRIPCIÓN": "Título del proyecto en ambos idiomas",
+    "es": "REQUIRED - Título en español",
+    "en": "REQUIRED - Title in English"
+  },
+  
+  "shortDescription": {
+    "// DESCRIPCIÓN": "Descripción breve para la tarjeta del proyecto (máximo 100 palabras)",
+    "// USO": "Se muestra en la lista de proyectos y en la página principal si es destacado",
+    "es": "REQUIRED - Descripción breve en español (máx 100 palabras)",
+    "en": "REQUIRED - Short description in English (max 100 words)"
+  },
+  
+  "fullDescription": {
+    "// DESCRIPCIÓN": "Descripción completa y detallada del proyecto (sin límite de palabras)",
+    "// USO": "Se muestra en la vista detallada del proyecto",
+    "// FORMATO": "Puede incluir múltiples párrafos, detalles técnicos, resultados, etc.",
+    "es": "REQUIRED - Descripción completa en español. Incluye contexto, metodología, tecnologías utilizadas, resultados obtenidos, desafíos superados, etc.",
+    "en": "REQUIRED - Full description in English. Include context, methodology, technologies used, results achieved, challenges overcome, etc."
+  },
+  
+  "image": "REQUIRED - Ruta a la imagen principal del proyecto (ej: /content/images/projects/mi-proyecto.jpg)",
+  
+  "technologies": [
+    "REQUIRED - Array de tecnologías utilizadas",
+    "Python",
+    "TensorFlow",
+    "Pandas",
+    "Ejemplo: Agrega todas las tecnologías, frameworks y herramientas relevantes"
+  ],
+  
+  "date": "REQUIRED - Fecha de finalización o última actualización en formato ISO 8601 (YYYY-MM-DD, ej: 2024-03-15)",
+  
+  "// ============================================": "",
+  "// CAMPOS OPCIONALES (OPTIONAL)": "",
+  "// ============================================": "",
+  
+  "images": {
+    "// DESCRIPCIÓN": "Array de imágenes adicionales para la galería del proyecto",
+    "// USO": "Se muestran en la vista detallada",
+    "// FORMATO": "Array de rutas a imágenes",
+    "// EJEMPLO": [
+      "/content/images/projects/mi-proyecto-1.jpg",
+      "/content/images/projects/mi-proyecto-2.jpg",
+      "/content/images/projects/mi-proyecto-dashboard.jpg"
+    ]
+  },
+  
+  "featured": {
+    "// DESCRIPCIÓN": "Indica si el proyecto debe aparecer en la página principal",
+    "// USO": "Solo los 3 proyectos más recientes con featured: true aparecen en home",
+    "// VALORES": "true o false (boolean)",
+    "// EJEMPLO": true
+  },
+  
+  "links": {
+    "// DESCRIPCIÓN": "Enlaces relacionados al proyecto",
+    "github": {
+      "// DESCRIPCIÓN": "URL del repositorio en GitHub",
+      "// EJEMPLO": "https://github.com/usuario/nombre-proyecto"
+    },
+    "demo": {
+      "// DESCRIPCIÓN": "URL de la demostración en vivo del proyecto",
+      "// EJEMPLO": "https://mi-proyecto-demo.streamlit.app"
+    }
+  },
+  
+  "// ============================================": "",
+  "// EJEMPLO COMPLETO": "",
+  "// ============================================": "",
+  "// A continuación un ejemplo real de cómo debería verse el archivo final": "",
+  
+  "_EJEMPLO": {
+    "id": "sentiment-analysis-nlp",
+    "title": {
+      "es": "Análisis de Sentimientos con NLP",
+      "en": "Sentiment Analysis with NLP"
+    },
+    "shortDescription": {
+      "es": "Sistema de análisis de sentimientos en redes sociales utilizando técnicas de procesamiento de lenguaje natural y modelos transformer.",
+      "en": "Social media sentiment analysis system using natural language processing techniques and transformer models."
+    },
+    "fullDescription": {
+      "es": "Este proyecto implementa un sistema avanzado de análisis de sentimientos para redes sociales. Utiliza modelos transformer pre-entrenados (BERT) fine-tuned con datos en español. El sistema puede clasificar tweets y comentarios en categorías de sentimiento (positivo, negativo, neutral) con 92% de precisión. Incluye un pipeline completo de preprocesamiento de texto, manejo de emojis, detección de sarcasmo y visualización de resultados en tiempo real.",
+      "en": "This project implements an advanced sentiment analysis system for social media. It uses pre-trained transformer models (BERT) fine-tuned with Spanish data. The system can classify tweets and comments into sentiment categories (positive, negative, neutral) with 92% accuracy. It includes a complete text preprocessing pipeline, emoji handling, sarcasm detection, and real-time results visualization."
+    },
+    "image": "/content/images/projects/sentiment-analysis.jpg",
+    "images": [
+      "/content/images/projects/sentiment-analysis.jpg",
+      "/content/images/projects/sentiment-dashboard.jpg"
+    ],
+    "technologies": ["Python", "Transformers", "BERT", "PyTorch", "NLTK", "FastAPI", "React"],
+    "date": "2024-02-20",
+    "featured": true,
+    "links": {
+      "github": "https://github.com/danielnavarro/sentiment-analysis-nlp",
+      "demo": "https://sentiment-demo.herokuapp.com"
+    }
+  },
+  
+  "// ============================================": "",
+  "// NOTAS IMPORTANTES": "",
+  "// ============================================": "",
+  "// NOTA 1": "Elimina todos los comentarios (líneas que empiezan con //) antes de usar este archivo",
+  "// NOTA 2": "Asegúrate de que las imágenes existan en la ruta especificada",
+  "// NOTA 3": "El campo 'id' debe ser único y no repetirse con otros proyectos",
+  "// NOTA 4": "Las fechas deben estar en formato ISO 8601 (YYYY-MM-DD)",
+  "// NOTA 5": "Ambos idiomas (es y en) son obligatorios para todos los campos de texto",
+  "// NOTA 6": "Ejecuta 'npm run validate:content' después de crear el archivo para verificar errores",
+  "// NOTA 7": "Si el proyecto es destacado (featured: true), aparecerá en la página principal"
+}

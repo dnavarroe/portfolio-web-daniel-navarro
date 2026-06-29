@@ -1,0 +1,283 @@
+{
+  "// INSTRUCCIONES": "Esta es una plantilla para agregar nuevas habilidades técnicas al portafolio",
+  "// PASOS": [
+    "1. Abre el archivo public/content/skills/technical.json",
+    "2. Encuentra la categoría apropiada o crea una nueva",
+    "3. Agrega la nueva habilidad siguiendo la estructura de esta plantilla",
+    "4. Ejecuta 'npm run validate:content' para verificar que todo esté correcto"
+  ],
+  
+  "// ============================================": "",
+  "// ESTRUCTURA DE CATEGORÍAS": "",
+  "// ============================================": "",
+  
+  "_ESTRUCTURA_ARCHIVO": {
+    "categories": [
+      {
+        "// DESCRIPCIÓN": "Cada categoría agrupa habilidades relacionadas",
+        "id": "REQUIRED - Identificador único de la categoría (kebab-case)",
+        "name": {
+          "es": "REQUIRED - Nombre de la categoría en español",
+          "en": "REQUIRED - Category name in English"
+        },
+        "skills": [
+          {
+            "// DESCRIPCIÓN": "Array de habilidades dentro de esta categoría"
+          }
+        ]
+      }
+    ]
+  },
+  
+  "// ============================================": "",
+  "// CAMPOS REQUERIDOS PARA HABILIDADES": "",
+  "// ============================================": "",
+  
+  "_SKILL_TEMPLATE": {
+    "id": "REQUIRED - Identificador único de la habilidad (kebab-case, ej: machine-learning)",
+    
+    "name": {
+      "// DESCRIPCIÓN": "Nombre de la habilidad en ambos idiomas",
+      "es": "REQUIRED - Nombre en español",
+      "en": "REQUIRED - Name in English"
+    },
+    
+    "category": {
+      "// DESCRIPCIÓN": "ID de la categoría a la que pertenece esta habilidad",
+      "// DEBE COINCIDIR": "Con el 'id' de una categoría existente",
+      "// EJEMPLO": "data-science"
+    },
+    
+    "level": {
+      "// DESCRIPCIÓN": "Nivel de dominio de la habilidad",
+      "// VALORES PERMITIDOS": ["basic", "intermediate", "advanced", "expert"],
+      "// basic": "Conocimiento básico, uso ocasional",
+      "// intermediate": "Uso regular, conocimiento sólido",
+      "// advanced": "Uso frecuente, conocimiento profundo",
+      "// expert": "Dominio completo, experiencia extensa",
+      "// EJEMPLO": "advanced"
+    },
+    
+    "icon": {
+      "// DESCRIPCIÓN": "Nombre del icono a mostrar (OPCIONAL)",
+      "// USO": "Se usa para mostrar un icono visual junto a la habilidad",
+      "// EJEMPLOS": "python, javascript, react, database, chart, brain, network",
+      "// NOTA": "Si no se especifica, se mostrará un icono genérico",
+      "// EJEMPLO": "python"
+    }
+  },
+  
+  "// ============================================": "",
+  "// CATEGORÍAS EXISTENTES": "",
+  "// ============================================": "",
+  "// Puedes agregar habilidades a estas categorías o crear nuevas": "",
+  
+  "_CATEGORIAS_EXISTENTES": {
+    "data-science": {
+      "es": "Ciencia de Datos",
+      "en": "Data Science",
+      "descripción": "Habilidades relacionadas con análisis de datos, ML, estadística"
+    },
+    "programming": {
+      "es": "Programación",
+      "en": "Programming",
+      "descripción": "Lenguajes de programación y paradigmas"
+    },
+    "tools": {
+      "es": "Herramientas y Frameworks",
+      "en": "Tools and Frameworks",
+      "descripción": "Frameworks, librerías y herramientas de desarrollo"
+    },
+    "cloud-databases": {
+      "es": "Cloud y Bases de Datos",
+      "en": "Cloud and Databases",
+      "descripción": "Servicios cloud, bases de datos, contenedores"
+    }
+  },
+  
+  "// ============================================": "",
+  "// EJEMPLO 1: AGREGAR HABILIDAD A CATEGORÍA EXISTENTE": "",
+  "// ============================================": "",
+  
+  "_EJEMPLO_1_AGREGAR_A_CATEGORIA_EXISTENTE": {
+    "// PASO 1": "Abre public/content/skills/technical.json",
+    "// PASO 2": "Encuentra la categoría 'data-science'",
+    "// PASO 3": "Agrega este objeto al array 'skills' de esa categoría:",
+    
+    "skill_a_agregar": {
+      "id": "natural-language-processing",
+      "name": {
+        "es": "Procesamiento de Lenguaje Natural",
+        "en": "Natural Language Processing"
+      },
+      "category": "data-science",
+      "level": "advanced",
+      "icon": "language"
+    }
+  },
+  
+  "// ============================================": "",
+  "// EJEMPLO 2: CREAR NUEVA CATEGORÍA CON HABILIDADES": "",
+  "// ============================================": "",
+  
+  "_EJEMPLO_2_CREAR_NUEVA_CATEGORIA": {
+    "// PASO 1": "Abre public/content/skills/technical.json",
+    "// PASO 2": "Agrega este objeto completo al array 'categories':",
+    
+    "nueva_categoria": {
+      "id": "soft-skills",
+      "name": {
+        "es": "Habilidades Blandas",
+        "en": "Soft Skills"
+      },
+      "skills": [
+        {
+          "id": "communication",
+          "name": {
+            "es": "Comunicación",
+            "en": "Communication"
+          },
+          "category": "soft-skills",
+          "level": "expert",
+          "icon": "chat"
+        },
+        {
+          "id": "teamwork",
+          "name": {
+            "es": "Trabajo en Equipo",
+            "en": "Teamwork"
+          },
+          "category": "soft-skills",
+          "level": "expert",
+          "icon": "users"
+        },
+        {
+          "id": "problem-solving",
+          "name": {
+            "es": "Resolución de Problemas",
+            "en": "Problem Solving"
+          },
+          "category": "soft-skills",
+          "level": "expert",
+          "icon": "lightbulb"
+        }
+      ]
+    }
+  },
+  
+  "// ============================================": "",
+  "// EJEMPLO 3: MÚLTIPLES HABILIDADES EN UNA CATEGORÍA": "",
+  "// ============================================": "",
+  
+  "_EJEMPLO_3_MULTIPLES_HABILIDADES": {
+    "// DESCRIPCIÓN": "Ejemplo de cómo agregar varias habilidades a la categoría 'tools'",
+    
+    "habilidades_a_agregar": [
+      {
+        "id": "jupyter",
+        "name": {
+          "es": "Jupyter Notebook",
+          "en": "Jupyter Notebook"
+        },
+        "category": "tools",
+        "level": "expert",
+        "icon": "jupyter"
+      },
+      {
+        "id": "git",
+        "name": {
+          "es": "Git",
+          "en": "Git"
+        },
+        "category": "tools",
+        "level": "advanced",
+        "icon": "git"
+      },
+      {
+        "id": "tableau",
+        "name": {
+          "es": "Tableau",
+          "en": "Tableau"
+        },
+        "category": "tools",
+        "level": "intermediate",
+        "icon": "chart-bar"
+      }
+    ]
+  },
+  
+  "// ============================================": "",
+  "// NIVELES DE DOMINIO - GUÍA DETALLADA": "",
+  "// ============================================": "",
+  
+  "_GUIA_NIVELES": {
+    "basic": {
+      "descripción": "Conocimiento básico y uso ocasional",
+      "características": [
+        "Has usado la tecnología en proyectos pequeños o tutoriales",
+        "Entiendes los conceptos fundamentales",
+        "Necesitas consultar documentación frecuentemente",
+        "Menos de 6 meses de experiencia"
+      ],
+      "ejemplo": "Has completado un curso online y hecho 1-2 proyectos pequeños"
+    },
+    "intermediate": {
+      "descripción": "Uso regular y conocimiento sólido",
+      "características": [
+        "Has usado la tecnología en varios proyectos",
+        "Puedes trabajar de forma independiente con supervisión ocasional",
+        "Conoces las mejores prácticas básicas",
+        "6 meses a 2 años de experiencia"
+      ],
+      "ejemplo": "Has usado la tecnología en 3-5 proyectos y puedes resolver problemas comunes"
+    },
+    "advanced": {
+      "descripción": "Uso frecuente y conocimiento profundo",
+      "características": [
+        "Has usado la tecnología en proyectos complejos",
+        "Puedes diseñar arquitecturas y tomar decisiones técnicas",
+        "Conoces patrones avanzados y optimizaciones",
+        "2-5 años de experiencia"
+      ],
+      "ejemplo": "Has liderado proyectos usando esta tecnología y puedes enseñar a otros"
+    },
+    "expert": {
+      "descripción": "Dominio completo y experiencia extensa",
+      "características": [
+        "Has usado la tecnología en múltiples proyectos de producción",
+        "Puedes resolver problemas complejos y optimizar rendimiento",
+        "Contribuyes a la comunidad o enseñas a otros",
+        "Más de 5 años de experiencia o uso muy intensivo"
+      ],
+      "ejemplo": "Eres referente en esta tecnología, has contribuido a proyectos open source o escrito sobre ella"
+    }
+  },
+  
+  "// ============================================": "",
+  "// ICONOS DISPONIBLES (EJEMPLOS)": "",
+  "// ============================================": "",
+  
+  "_ICONOS_COMUNES": {
+    "lenguajes": ["python", "javascript", "r-lang", "java", "cpp"],
+    "data_science": ["brain", "chart", "chart-line", "chart-bar", "network"],
+    "herramientas": ["git", "docker", "jupyter", "vscode"],
+    "bases_datos": ["database", "mongodb", "postgresql", "mysql"],
+    "cloud": ["aws", "azure", "gcp", "cloud"],
+    "frameworks": ["react", "tensorflow", "pytorch", "scikit"],
+    "otros": ["lightbulb", "users", "chat", "language", "code"]
+  },
+  
+  "// ============================================": "",
+  "// NOTAS IMPORTANTES": "",
+  "// ============================================": "",
+  "// NOTA 1": "Este archivo es solo una plantilla de referencia, NO lo copies directamente",
+  "// NOTA 2": "Edita public/content/skills/technical.json para agregar habilidades",
+  "// NOTA 3": "Elimina todos los comentarios (líneas con //) al agregar habilidades reales",
+  "// NOTA 4": "El campo 'id' debe ser único dentro de todas las habilidades",
+  "// NOTA 5": "El campo 'category' debe coincidir con el 'id' de una categoría existente",
+  "// NOTA 6": "Los niveles válidos son: basic, intermediate, advanced, expert",
+  "// NOTA 7": "Ambos idiomas (es y en) son obligatorios para todos los campos de texto",
+  "// NOTA 8": "Ejecuta 'npm run validate:content' después de agregar habilidades",
+  "// NOTA 9": "El campo 'icon' es opcional, si no se especifica se usa un icono genérico",
+  "// NOTA 10": "Mantén consistencia en los nombres de categorías y niveles"
+}
