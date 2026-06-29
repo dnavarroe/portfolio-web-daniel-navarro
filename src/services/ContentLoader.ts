@@ -110,14 +110,24 @@ export class ContentLoader {
    * @returns Promise<T> parsed JSON data
    * @throws Error if fetch fails or JSON parsing fails
    */
+  private static resolvePath(path: string): string {
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return path;
+    }
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    return `${baseUrl}${cleanPath}`;
+  }
+
   private static async loadJSON<T>(path: string): Promise<T> {
+    const resolvedPath = this.resolvePath(path);
     // Check cache first
-    if (this.cache.has(path)) {
-      return this.cache.get(path) as T;
+    if (this.cache.has(resolvedPath)) {
+      return this.cache.get(resolvedPath) as T;
     }
 
     try {
-      const response = await fetch(path);
+      const response = await fetch(resolvedPath);
 
       if (!response.ok) {
         throw new Error(
@@ -128,7 +138,7 @@ export class ContentLoader {
       const data = await response.json();
       
       // Store in cache
-      this.cache.set(path, data);
+      this.cache.set(resolvedPath, data);
       
       return data as T;
     } catch (error) {
