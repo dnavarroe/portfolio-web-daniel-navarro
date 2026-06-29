@@ -6,20 +6,22 @@ import ProjectsPage from './ProjectsPage';
 import { ContentLoader } from '../services/ContentLoader';
 import type { Project } from '../types';
 
+const stableT = (key: string) => {
+  const translations: Record<string, string> = {
+    'projects.title': 'My Projects',
+    'common.loading': 'Loading...',
+    'common.error': 'Error',
+    'common.retry': 'Retry',
+    'errors.projectsLoadFailed': 'Failed to load projects',
+    'projects.noProjects': 'No projects available.'
+  };
+  return translations[key] || key;
+};
+
 // Mock dependencies
 vi.mock('react-i18next', () => ({
   useTranslation: () => ({
-    t: (key: string) => {
-      const translations: Record<string, string> = {
-        'projects.title': 'My Projects',
-        'common.loading': 'Loading...',
-        'common.error': 'Error',
-        'common.retry': 'Retry',
-        'errors.projectsLoadFailed': 'Failed to load projects',
-        'projects.noProjects': 'No projects available.'
-      };
-      return translations[key] || key;
-    },
+    t: stableT,
     i18n: {
       language: 'es'
     }
@@ -101,7 +103,7 @@ describe('ProjectsPage', () => {
     });
   });
 
-  it('should display error state when loading fails', async () => {
+  it('should display error state and retry button when loading fails', async () => {
     vi.mocked(ContentLoader.loadProjects).mockRejectedValue(
       new Error('Network error')
     );
@@ -111,17 +113,6 @@ describe('ProjectsPage', () => {
     await waitFor(() => {
       expect(screen.getByText('Error')).toBeInTheDocument();
       expect(screen.getByText('Failed to load projects')).toBeInTheDocument();
-    });
-  });
-
-  it('should display retry button on error', async () => {
-    vi.mocked(ContentLoader.loadProjects).mockRejectedValue(
-      new Error('Network error')
-    );
-
-    renderWithRouter(<ProjectsPage />);
-    
-    await waitFor(() => {
       expect(screen.getByText('Intentar de nuevo')).toBeInTheDocument();
     });
   });
