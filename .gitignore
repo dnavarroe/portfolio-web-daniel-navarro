@@ -28,4 +28,6 @@ coverage
 
 # Python
 .venv/
+.kiro/
+.vscode/
 .ipynb_checkpoints/
