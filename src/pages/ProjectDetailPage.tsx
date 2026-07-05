@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ContentLoader } from '../services/ContentLoader';
 import SEO from '../components/SEO';
+import { OptimizedImage } from '../components/OptimizedImage';
 import { generateProjectStructuredData } from '../utils/structuredData';
 import type { Project } from '../types';
 
@@ -39,6 +40,8 @@ function ProjectDetailPage() {
   }, [projectId]);
 
   const currentLang = i18n.language as 'es' | 'en';
+  const mainImage = project?.image;
+  const galleryImages = project?.images ? project.images.filter((img) => img !== mainImage) : [];
 
   if (loading) {
     return (
@@ -122,6 +125,17 @@ function ProjectDetailPage() {
         {project.title[currentLang]}
       </h1>
 
+      {/* Main Image */}
+      {project.image && (
+        <div className="mb-8 rounded-xl overflow-hidden shadow-md border border-gray-100 max-h-[480px]">
+          <OptimizedImage
+            src={project.image}
+            alt={project.title[currentLang]}
+            className="w-full h-full object-cover max-h-[480px]"
+            loading="eager"
+          />
+        </div>
+      )}
 
       {/* Technologies */}
       <div className="mb-8">
@@ -146,6 +160,31 @@ function ProjectDetailPage() {
           {project.fullDescription[currentLang]}
         </div>
       </div>
+
+      {/* Visualizations / Image Gallery */}
+      {galleryImages.length > 0 && (
+        <div className="mb-10">
+          <h2 className="text-2xl font-heading font-semibold text-gray-900 mb-6">
+            {currentLang === 'es' ? 'Visualizaciones del Proyecto' : 'Project Visualizations'}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {galleryImages.map((imgUrl, idx) => (
+              <div
+                key={imgUrl}
+                className="group relative overflow-hidden rounded-xl shadow-md border border-gray-150 bg-white hover:shadow-lg transition-all duration-300"
+              >
+                <div className="relative overflow-hidden aspect-video">
+                  <OptimizedImage
+                    src={imgUrl}
+                    alt={`${project.title[currentLang]} - Chart ${idx + 1}`}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
 
       {/* Links */}

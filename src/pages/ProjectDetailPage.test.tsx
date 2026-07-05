@@ -97,13 +97,13 @@ describe('ProjectDetailPage', () => {
     expect(screen.getByText('Vite')).toBeInTheDocument();
   });
 
-  it('should not display project images on detail page', async () => {
+  it('should display project images on detail page', async () => {
     vi.mocked(ContentLoader.loadProject).mockResolvedValue(mockProject);
 
     renderWithRouter('test-project');
 
     await waitFor(() => {
-      expect(screen.queryByTestId('optimized-image')).not.toBeInTheDocument();
+      expect(screen.getAllByTestId('optimized-image').length).toBeGreaterThan(0);
     });
   });
 
