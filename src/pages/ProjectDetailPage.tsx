@@ -7,6 +7,74 @@ import { OptimizedImage } from '../components/OptimizedImage';
 import { generateProjectStructuredData } from '../utils/structuredData';
 import type { Project } from '../types';
 
+function parseInlineMarkdown(text: string) {
+  const parts = text.split('**');
+  return parts.map((part, i) => {
+    const isBold = i % 2 !== 0;
+    
+    const subparts = part.split('*');
+    const renderedSubparts = subparts.map((subpart, j) => {
+      const isItalic = j % 2 !== 0;
+      if (isItalic) {
+        return <em key={j} className="italic">{subpart}</em>;
+      }
+      return subpart;
+    });
+    
+    if (isBold) {
+      return <strong key={i} className="font-semibold text-gray-900">{renderedSubparts}</strong>;
+    }
+    return <span key={i}>{renderedSubparts}</span>;
+  });
+}
+
+function renderMarkdown(text: string) {
+  const lines = text.split('\n');
+  return lines.map((line, idx) => {
+    if (line.startsWith('### ')) {
+      return (
+        <h3 key={idx} className="text-xl font-heading font-semibold text-gray-900 mt-6 mb-3">
+          {parseInlineMarkdown(line.slice(4))}
+        </h3>
+      );
+    }
+    if (line.startsWith('## ')) {
+      return (
+        <h2 key={idx} className="text-2xl font-heading font-semibold text-gray-900 mt-8 mb-4">
+          {parseInlineMarkdown(line.slice(3))}
+        </h2>
+      );
+    }
+    
+    if (line.startsWith('- ')) {
+      return (
+        <li key={idx} className="ml-6 list-disc text-gray-700 my-1">
+          {parseInlineMarkdown(line.slice(2))}
+        </li>
+      );
+    }
+    
+    const numberedListMatch = line.match(/^(\d+)\.\s(.*)/);
+    if (numberedListMatch) {
+      return (
+        <li key={idx} className="ml-6 list-decimal text-gray-700 my-1">
+          {parseInlineMarkdown(numberedListMatch[2])}
+        </li>
+      );
+    }
+    
+    if (line.trim() === '') {
+      return <div key={idx} className="h-3" />;
+    }
+    
+    return (
+      <p key={idx} className="text-gray-700 my-2 leading-relaxed">
+        {parseInlineMarkdown(line)}
+      </p>
+    );
+  });
+}
+
 function ProjectDetailPage() {
   const { projectId } = useParams<{ projectId: string }>();
   const navigate = useNavigate();
@@ -125,18 +193,6 @@ function ProjectDetailPage() {
         {project.title[currentLang]}
       </h1>
 
-      {/* Main Image */}
-      {project.image && (
-        <div className="mb-8 rounded-xl overflow-hidden shadow-md border border-gray-100 max-h-[480px]">
-          <OptimizedImage
-            src={project.image}
-            alt={project.title[currentLang]}
-            className="w-full h-full object-cover max-h-[480px]"
-            loading="eager"
-          />
-        </div>
-      )}
-
       {/* Technologies */}
       <div className="mb-8">
         <h2 className="text-2xl font-heading font-semibold text-gray-900 mb-4">
@@ -156,8 +212,8 @@ function ProjectDetailPage() {
 
       {/* Full description */}
       <div className="mb-8">
-        <div className="prose prose-lg max-w-none text-gray-700 whitespace-pre-wrap">
-          {project.fullDescription[currentLang]}
+        <div className="prose prose-lg max-w-none text-gray-700">
+          {renderMarkdown(project.fullDescription[currentLang])}
         </div>
       </div>
 
