@@ -31,3 +31,12 @@ coverage
 .kiro/
 .vscode/
 .ipynb_checkpoints/
+
+# Local-only directories
+docs/
+proyectos_notebooks/
+
+# Local-only scripts/documentation
+scripts/create-placeholders.py
+scripts/create-placeholder-images.md
+scripts/README.md
